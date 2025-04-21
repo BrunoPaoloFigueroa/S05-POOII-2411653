@@ -12,6 +12,6 @@ public class PayPalAdapter implements PaymentProcessor {
 
     @Override
     public boolean processPayment(double monto, String b) {
-        return "success".equals(paypal.processPayment(monto, b));
+        return "realizado".equals(paypal.processPayment(monto, b));
     }
 }

@@ -15,6 +15,6 @@ public class MercadoPagoAdapter implements PaymentProcessor {
     @Override
     public boolean processPayment(double monto, String b) {
         Map<String, Object> result = mercadoPago.executePayment(monto, b);
-        return "approved".equals(result.get("estado"));
+        return "aprovado".equals(result.get("estado"));
     }
 }
